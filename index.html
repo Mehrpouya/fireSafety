@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="js/vendor/bootstrap-3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="js/vendor/bootstrap-3.3.7/css/bootstrap-theme.min.css" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="js/vendor/jquery-3.1.0.min.js"  crossorigin="anonymous"></script>
+  <script src="js/vendor/bootstrap-3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Registration</h1>
+    <hr>
+    <fieldset>
+      <div class="form-group row">
+        <label  class="col-md-4 control-label" for="firstName">Firstname</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control input-md" id="firstName" placeholder="Your firstname">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label  class="col-md-4 control-label" for="lastName">Lastname</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control input-md" id="lastName" placeholder="Your lastname">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label  class="col-md-4 control-label" for="telephone">Telephone</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control input-md" id="telephone" placeholder="Telephone">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label  class="col-md-4 control-label" for="exampleInputEmail1">Email address</label>
+        <div class="col-md-4">
+          <input type="email" class="form-control input-md" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="form-group row ">
+        <label class="col-md-4 control-label" for="buttondropdown">How many children live at the address?</label>
+        <div class="col-md-4">
+          <div class="input-group">
+            <input id="numChildren" name="buttondropdown" class="form-control" placeholder="Number of children" type="text">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default" id="addChildrenBtn">
+                Add children
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="children"></div>
+      <!-- <div class="form-group row">
+        <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+        <div id="demo" class="collapse">
+          <div class="form-group row">
+            <label class="col-md-4 control-label" for="buttondropdown">Age of child</label>
+            <div class="col-md-4">
+              <div class="input-group">
+                <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="Age" type="text">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Gender
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Male</a></li>
+                    <li><a href="#">Female</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-4 control-label" for="buttondropdown">Does this child sleep in their own room?</label>
+            <div class="col-md-4">
+              <div class="input-group">
+                <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="Comments" required="" type="text">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Answer
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Yes</a></li>
+                    <li><a href="#">No</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row ">
+            <label class="col-md-4 control-label" for="hand">Are they lefthanded or right handed?</label>
+            <div class="col-md-4">
+              <label class="radio-inline" for="hand-0">
+                <input name="hand" id="hand-0" value="left" checked="checked" type="radio">
+                Left handed
+              </label>
+              <label class="radio-inline" for="hand-1">
+                <input name="hand" id="hand-1" value="right" type="radio">
+                Right handed
+              </label>
+            </div>
+          </div>
+          <div class="form-group row ">
+            <label class="col-md-4 control-label" for="buttondropdown">Does this child have difficulties getting to sleep or remaining aspleep during the night?</label>
+            <div class="col-md-4">
+              <div class="input-group">
+                <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="if so, please expand a little..." required="" type="text">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Answer
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Yes</a></li>
+                    <li><a href="#">No</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="form-group row ">
+        <label class="col-md-4 control-label" for="buttondropdown">Does anyone in the family work for a fire and rescue service?</label>
+        <div class="col-md-4">
+          <div class="input-group">
+            <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="Comments" type="text">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Answer
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="#">Yes</a></li>
+                <li><a href="#">No</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row ">
+        <label class="col-md-4 control-label" for="buttondropdown">Did this child have any childhood ilnesses (e.g. mumps, measles, chicken pox)?</label>
+        <div class="col-md-4">
+          <div class="input-group">
+            <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="What illnesses?" required="" type="text">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Answer
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="#">Yes</a></li>
+                <li><a href="#">No</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row ">
+        <label class="col-md-4 control-label" for="hearing">Does this child, as far as you are aware, have normal hearing?</label>
+        <div class="col-md-4">
+          <label class="radio-inline" for="hearing-0">
+            <input name="hearing" id="hearing-0" value="yes" checked="checked" type="radio">
+            Yes
+          </label>
+          <label class="radio-inline" for="hearing-1">
+            <input name="hearing" id="hearing-1" value="no" type="radio">
+            No
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <script src="js/registration.js" ></script>
+  <body>
